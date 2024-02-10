@@ -1,0 +1,15 @@
+Resources:
+  ApiGateway:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: "ImageProcessingAPI"
+  LambdaIntegration:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref ApiGateway
+      ResourceId: !Ref ApiGateway.RootResourceId
+      HttpMethod: "POST"
+      Integration:
+        Type: "AWS_PROXY"
+        Uri: !Sub
+          - arn:aws:apigateway:${Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations

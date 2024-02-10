@@ -1,0 +1,5 @@
+Resources:
+  ImageBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "serverless-image-processing-bucket"
