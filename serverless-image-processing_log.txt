@@ -3,3 +3,4 @@ Add Lambda function completed on 2024-02-01 22:27:44
 Set up API Gateway completed on 2024-09-25 22:27:44
 Configure S3 bucket completed on 2024-01-28 22:27:44
 Write unit tests completed on 2024-06-20 22:27:44
+Complete README completed on 2024-07-07 22:27:44
